@@ -2,7 +2,7 @@ name: Push Docs to Main Repo Wiki
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   workflow_dispatch:
 
 jobs:
@@ -12,13 +12,13 @@ jobs:
       - name: Checkout this repo
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: master
           path: this
 
       - name: Checkout wiki
         uses: actions/checkout@v4
         with:
-          repository: eva828/WikiTest.wiki
+          repository: ExternalLocalizer/TMLHonyaku.wiki
           ref: master
           path: wiki
           token: ${{ secrets.TARGET_REPO_PAT }}
