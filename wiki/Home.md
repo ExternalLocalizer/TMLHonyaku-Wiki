@@ -1,6 +1,6 @@
 TMLHonyakuへようこそ。
 
-このリポジトリは、External Localizerで使用する、翻訳用hjsonファイルを管理しています。
+このリポジトリは、[External Localizer][steam:ExternalLocalizer]で使用する、翻訳用hjsonファイルを管理しています。
 
 ## 翻訳を使用する
 
@@ -24,3 +24,11 @@ TMLHonyakuにアップロードする場合、なるべくこの用語集に倣�
   - [アイテム（家具）](用語集-アイテム（家具）)
   - [アイテム（その他）](用語集-アイテム（その他）)
   - [連携Mod](用語集-連携Mod)
+
+___
+
+このwikiは[TMLHonyaku-Wiki][github:TMLHonyaku-Wiki]から編集できます。
+
+<!-- links -->
+[steam:ExternalLocalizer]: <https://steamcommunity.com/workshop/filedetails/?id=2986383249>
+[github:TMLHonyaku-Wiki]: <https://github.com/ExternalLocalizer/TMLHonyaku-Wiki>
