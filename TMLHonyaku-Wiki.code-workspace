@@ -1,0 +1,41 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    // "editor.fontFamily": "'MS Gothic', monospace",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "[markdown]": {
+      "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": "always",
+    },
+    "markdown.copyFiles.destination": {
+      "*": "images/${documentBaseName}/"
+    },
+    "markdownlint.config": {
+      "MD041": false,
+      "MD053": false,
+    },
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.wordWrap": "on"
+  },
+  "extensions": {
+    "recommendations": [
+      "yzhang.markdown-all-in-one",
+      "takumii.markdowntable",
+      "davidanson.vscode-markdownlint",
+      "christian-kohler.path-intellisense",
+      "bierner.markdown-preview-github-styles",
+      // "bierner.markdown-emoji",
+      "bierner.markdown-checkbox",
+      "bierner.markdown-footnotes",
+      "bierner.markdown-mermaid"
+    ]
+  }
+}

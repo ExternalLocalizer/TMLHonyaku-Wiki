@@ -1,0 +1,39 @@
+name: Push Docs to Main Repo Wiki
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: this
+
+      - name: Checkout wiki
+        uses: actions/checkout@v4
+        with:
+          repository: eva828/WikiTest.wiki
+          ref: master
+          path: wiki
+          token: ${{ secrets.TARGET_REPO_PAT }}
+
+      - name: Set Git Config
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Copy from this to wiki
+        run: rsync -av --exclude=.git --exclude=.github --exclude=README.md --delete this/wiki/ wiki/
+
+      - name: Commit and Push
+        working-directory: wiki
+        run: |
+          git add .
+          git commit --allow-empty -m "Sync from main repo"
+          git push -f origin master
