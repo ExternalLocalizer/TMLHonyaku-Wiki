@@ -26,7 +26,7 @@ A. 配置場所が間違っている、またはファイル名が誤ってい�
 また、Terrariaのインストール先がOneDriveになっていたり、Steamクラウドがオンの場合、うまく反映されない時があります。
 
 ### Q. アスタリスクになるんだけど
-A. [TrJpMod]([https://steamcommunity.com/sharedfiles/filedetails/?id=3401926459]など、フォントが同梱されているリソースパックなどを導入してください。
+A. [TrJpMod](https://steamcommunity.com/sharedfiles/filedetails/?id=3401926459)など、フォントが同梱されているリソースパックなどを導入してください。
 
 ### Q. いちいちファイル入れるのめんどいんだけど？
 A. External localizerとExternal localizer JapanesePackを導入することで手間を省けます。
