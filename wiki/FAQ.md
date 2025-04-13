@@ -12,7 +12,7 @@
 ## インストール・導入関連
 
 ### Q. External localizerを導入したんだけど日本語化されない！
-A.勘違いされがちですが、このModは「hjsonファイルを書き出し、読み込み」を行うためのModです。単に日本語化したいだけの場合は、External localizerとJapanesePackを導入してください。
+A.勘違いされがちですが、このModは「hjsonファイルを書き出し、読み込み」を行うためのModです。単に日本語化したいだけの場合は、[External localizer](https://steamcommunity.com/sharedfiles/filedetails/?id=2986383249)と[External localizer JapanesePack](https://steamcommunity.com/sharedfiles/filedetails/?id=3401890281)を導入してください。
 
 ### Q. 1.4.4対応？
 A. はい、対応しています。
