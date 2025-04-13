@@ -104,7 +104,7 @@ A. 現在、Calamity Modなど大規模Modが最新版に対応していない�
 
 ### Q. 文字がウィンドウからはみ出たり、重なって押せなかったりするんだけど
 A. 日本語フォントの幅やレイアウトの都合で表示が崩れる場合があります。
-翻訳ファイルは基本的に[TrJpMod]([https://steamcommunity.com/sharedfiles/filedetails/?id=3401926459]のフォントを基準として作られています。
+翻訳ファイルは基本的に[TrJpMod](https://steamcommunity.com/sharedfiles/filedetails/?id=3401926459)のフォントを基準として作られています。
 
 ### Q. ゲーム内ワークショップから検索しても出てこないんだけど
 A. [Steamワークショップ](https://steamcommunity.com/sharedfiles/filedetails/?id=2986383249)からダウンロードすることを推奨します。
