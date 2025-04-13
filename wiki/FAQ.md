@@ -26,7 +26,7 @@ A. 配置場所が間違っている、またはファイル名が誤ってい�
 また、Terrariaのインストール先がOneDriveになっていたり、Steamクラウドがオンの場合、うまく反映されない時があります。
 
 ### Q. アスタリスクになるんだけど
-A. [TrJpMod]([https://steamcommunity.com/sharedfiles/filedetails/?id=3401926459](https://steamcommunity.com/sharedfiles/filedetails/?l=japanese&id=2864004486)など、フォントが同梱されているリソースパックなどを導入してください。
+A. [TrJpMod]([https://steamcommunity.com/sharedfiles/filedetails/?id=3401926459]など、フォントが同梱されているリソースパックなどを導入してください。
 
 ### Q. いちいちファイル入れるのめんどいんだけど？
 A. External localizerとExternal localizer JapanesePackを導入することで手間を省けます。
@@ -66,7 +66,7 @@ A. 仕様上訳せない箇所がいくつかあります。
 ## Mod・TML関連
 
 ### Q. TMLをダウンロードする際の注意点は？
-A. 安定版を使用すること、公式サイトかSteam経由で入手することを推奨します。
+A. 安定版を使用すること、公式サイトか[Steam経由](https://store.steampowered.com/app/1281930/tModLoader/)でインストールすることを推奨します。
 また、Terrariaのインストール先がOneDriveになっていたり、Steamクラウドがオンの場合、不具合の原因になります。
 
 ### Q. 対応Modは？
@@ -99,11 +99,10 @@ A. 現在、Calamity Modなど大規模Modが最新版に対応していない�
 
 ### Q. 文字がウィンドウからはみ出たり、重なって押せなかったりするんだけど
 A. 日本語フォントの幅やレイアウトの都合で表示が崩れる場合があります。
-翻訳ファイルは基本的に[TrJpMod]([https://steamcommunity.com/sharedfiles/filedetails/?id=3401926459](https://steamcommunity.com/sharedfiles/filedetails/?l=japanese&id=2864004486)のフォントを基準として作られています。
+翻訳ファイルは基本的に[TrJpMod]([https://steamcommunity.com/sharedfiles/filedetails/?id=3401926459]のフォントを基準として作られています。
 
 ### Q. ゲーム内ワークショップから検索しても出てこないんだけど
-A. Steamワークショップからダウンロードすることを推奨します。
-[External Localizer](https://steamcommunity.com/sharedfiles/filedetails/?id=2986383249)
+A. [Steamワークショップ](https://steamcommunity.com/sharedfiles/filedetails/?id=2986383249)からダウンロードすることを推奨します。
 
 ---
 
