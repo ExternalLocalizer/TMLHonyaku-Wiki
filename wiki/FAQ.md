@@ -36,7 +36,7 @@ A. External localizerとExternal localizer JapanesePackを導入することで�
 ## 日本語化・翻訳関連
 
 ### Q. 翻訳したいんだけど、どうやって日本語化ファイルを作るの？
-A. [翻訳のやり方](HowToContribute/翻訳のやり方)を参考にしてください。
+A. [翻訳のやり方](HowToContribute-翻訳のやり方)を参考にしてください。
 
 ### Q. Japanese Packを導入するだけで日本語化できるModを教えて！
 A. 対応Mod一覧は[こちら](https://github.com/ExternalLocalizer/TMLHonyaku/blob/main/TranslatedMods.csv)をご覧ください。
