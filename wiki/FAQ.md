@@ -89,11 +89,13 @@ A. 現在、Calamity Modなど大規模Modが最新版に対応していない�
 
 📁 該当フォルダ：ドキュメント/My Games/Terraria/tModLoader/ExternalLocalizer/localization
 
+
 それでもエラーが解消しない場合、Modのアップデートが正常に反映されていないことがあります。
 一度「サブスクライブ解除 → 再度サブスクライブ」をお試しください。
 改善しない場合は、一度該当Modファイルをすべて削除し、再導入してみてください。
 
 📁 Calamity Modのワークショップファイルの場所：Steam/steamapps/workshop/content/1281930/2824688072
+
 
 💬 解決しない場合は…
 
