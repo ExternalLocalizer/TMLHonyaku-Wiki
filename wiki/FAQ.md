@@ -44,7 +44,7 @@ A. 対応Mod一覧は[こちら](https://github.com/ExternalLocalizer/TMLHonyaku
 ### Q. アイテムの原文表示とかはどうやるの？
 A. 設定→Modの設定→External localizer→ローカライズの設定→ローカライズの項目の「アイテム名の表示形式」を変更すればできます。3つあるのでお好きなものを選んでください。
 (このオプションをオンにしても適用されないModがいくつかあります)
-ちなみに、TrJpMod(日本語化パック)を使用している場合、この方法だとバニラアイテムが「銅の短剣(銅の短剣)」のようになってしまうため、バニラアイテムの原文も見たい人はExternal localizer、External localizer JapanesePack、[TrJpMod[EN] (日本語化パック)](https://steamcommunity.com/sharedfiles/filedetails/?id=2865024243)をサブスクライブして使用してください。
+ちなみに、TrJpMod(日本語化パック)を使用している場合、この方法だとバニラアイテムが「銅の短剣(銅の短剣)」のようになってしまうため、バニラアイテムの原文も見たい人は[External localizer](https://steamcommunity.com/sharedfiles/filedetails/?id=2986383249)、[External localizer JapanesePack](https://steamcommunity.com/sharedfiles/filedetails/?id=3401890281)、[TrJpMod[EN] (日本語化パック)](https://steamcommunity.com/sharedfiles/filedetails/?id=2865024243)をサブスクライブして使用してください。
 原文だけ見たい方はフィルターのプリセットから原文表示したいものを個別でオンにしてください。
 
 ### Q. 誤訳見つけたよ！or ここ翻訳おかしくない？
@@ -84,7 +84,7 @@ A. 万が一に備えてバックアップを取ってからModを導入する�
 
 ### Q. (バージョンが違うって)エラー吐くんだが？
 A. 現在、Calamity Modなど大規模Modが最新版に対応していないということは、**ほぼありません**。
-以前にExternal localizerを導入していたことがある場合、古い設定ファイルが残っていて不具合を引き起こすことがあります。
+以前にExternal localizerを導入していたことがある場合、古い日本語化ファイルが残っていて不具合を引き起こすことがあります。
 以下の手順でフォルダ内の .hjson ファイルをすべて削除してください。
 
 📁 該当フォルダ：ドキュメント/My Games/Terraria/tModLoader/ExternalLocalizer/localization
