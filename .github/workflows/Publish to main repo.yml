@@ -1,0 +1,32 @@
+name: Publish to main repo
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    if: github.repository == 'ExternalLocalizer/TMLHonyaku-Wiki'
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set personal access token
+        run: git config --global url."https://x-access-token:${{ secrets.DOTWIKI_DEPLOY_PAT }}@github.com/".insteadOf "https://github.com/"
+
+      - name: Add remote
+        run: git remote add new-origin https://github.com/ExternalLocalizer/TMLHonyaku.wiki.git
+      
+      - name: Push
+        run: git push --force new-origin HEAD:master

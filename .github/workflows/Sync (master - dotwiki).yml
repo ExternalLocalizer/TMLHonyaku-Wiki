@@ -1,0 +1,98 @@
+name: Sync (master - dotwiki)
+
+on:
+  push:
+    branches:
+      - master
+  gollum:
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  check-wiki:
+    runs-on: ubuntu-latest
+    if: github.repository != 'ExternalLocalizer/TMLHonyaku-Wiki'
+
+    outputs:
+      exists: ${{ steps.check.outputs.result }}
+
+    steps:
+      - name: Check if Wiki exists using github-script
+        id: check
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          result-encoding: string
+          script: |
+            try {
+              const res = await github.rest.repos.get({
+                owner: context.repo.owner,
+                repo: context.repo.repo
+              });
+              console.log("Wiki exists:", res.data.has_wiki);
+              return res.data.has_wiki.toString();
+            } catch (err) {
+              console.warn(`Wiki repo not available: ${err.message}`);
+              return "false";
+            }
+        
+  sync-docs-to-wiki:
+    runs-on: ubuntu-latest
+
+    needs: check-wiki
+    if: github.event_name == 'push' && needs.check-wiki.outputs.exists == 'true'
+
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}-${{ github.job }}
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Add remote
+        run: git remote add new-origin https://github.com/${{ github.repository }}.wiki.git
+
+      - name: Set Git Config
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Pull and merge
+        run: git pull new-origin master
+
+      - name: Push
+        run: git push new-origin HEAD:master
+
+  sync-wiki-to-docs:
+    runs-on: ubuntu-latest
+
+    needs: check-wiki
+    if: github.event_name == 'gollum' && needs.check-wiki.outputs.exists == 'true'
+
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}-${{ github.job }}
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}.wiki
+          ref: master
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Add remote
+        run: git remote add new-origin https://github.com/${{ github.repository }}.git
+
+      - name: Push
+        run: git push --force new-origin HEAD:master
