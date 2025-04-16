@@ -67,7 +67,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
 
       - name: Pull and merge
-        run: git pull new-origin master
+        run: git pull --no-rebase new-origin master
 
       - name: Push
         run: git push new-origin HEAD:master
