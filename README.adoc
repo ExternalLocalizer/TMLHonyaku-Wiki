@@ -1,6 +1,10 @@
 = TMLHonyaku-Wiki
 
-https://github.com/ExternalLocalizer/TMLHonyaku[TMLHonyaku]のWikiを管理するリポジトリです。
+link:https://github.com/ExternalLocalizer/TMLHonyaku[TMLHonyaku]のWikiを管理するリポジトリです。
 
 wikiディレクトリを編集してPRを送ってください。
 権限をお持ちの方は、直接編集していただいても構いません。
+
+またForkすることで、link:https://github.com/ExternalLocalizer/TMLHonyaku-Wiki/blob/master/.github/workflows/Sync%20(master%20-%20dotwiki).yml[スクリプト] により、本リポジトリとwikiリポジトリが同期され、GitHubのGUIを用いた編集が可能になります。
+プレビュー機能や、画像の挿入機能が便利なのでぜひお試しください。(注: Actionsの有効化とWikiの有効化が必要です)
+
