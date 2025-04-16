@@ -22,7 +22,7 @@ jobs:
       exists: ${{ steps.check.outputs.result }}
 
     steps:
-      - name: Check if Wiki exists using github-script
+      - name: Check if Wiki exists
         id: check
         uses: actions/github-script@v7
         with:
@@ -40,12 +40,78 @@ jobs:
               console.warn(`Wiki repo not available: ${err.message}`);
               return "false";
             }
+
+  check-same-root-commit:
+    runs-on: ubuntu-latest
+    
+    needs:
+      - check-wiki
+
+    if: needs.check-wiki.outputs.exists == 'true'
+
+    outputs:
+      same: ${{ steps.check.outputs.result }}
+
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          path: master
+
+      - name: Checkout wiki
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}.wiki
+          fetch-depth: 0
+          path: wiki
+
+      - name: Check if root commits are the same
+        id: check
+        run: |
+          WIKI_ROOT_COMMIT=$(git --git-dir=wiki/.git rev-list --max-parents=0 HEAD)
+          MASTER_ROOT_COMMIT=$(git --git-dir=master/.git rev-list --max-parents=0 HEAD)
+          
+          echo "Wiki root commit: $WIKI_ROOT_COMMIT"
+          echo "Master root commit: $MASTER_ROOT_COMMIT"
+
+          if [ "$WIKI_ROOT_COMMIT" == "$MASTER_ROOT_COMMIT" ]; then
+            echo "result=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "result=false" >> "$GITHUB_OUTPUT"
+          fi
+  
+  init-wiki:
+    runs-on: ubuntu-latest
+    needs:
+      - check-same-root-commit
+    
+    if: needs.check-same-root-commit.outputs.same == 'false'
+
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.job }}
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Add remote
+        run: git remote add new-origin https://github.com/${{ github.repository }}.wiki.git
+
+      - name: Force push
+        run: git push --force new-origin HEAD:master
         
   sync-docs-to-wiki:
     runs-on: ubuntu-latest
 
-    needs: check-wiki
-    if: github.event_name == 'push' && needs.check-wiki.outputs.exists == 'true'
+    needs:
+      - check-same-root-commit
+
+    if: needs.check-same-root-commit.outputs.same == 'true' && github.event_name == 'push' 
 
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}-${{ github.job }}
@@ -75,8 +141,10 @@ jobs:
   sync-wiki-to-docs:
     runs-on: ubuntu-latest
 
-    needs: check-wiki
-    if: github.event_name == 'gollum' && needs.check-wiki.outputs.exists == 'true'
+    needs:
+      - check-same-root-commit
+
+    if: needs.check-same-root-commit.outputs.same == 'true' && github.event_name == 'gollum' 
 
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}-${{ github.job }}
@@ -94,5 +162,5 @@ jobs:
       - name: Add remote
         run: git remote add new-origin https://github.com/${{ github.repository }}.git
 
-      - name: Push
+      - name: Force push
         run: git push --force new-origin HEAD:master
