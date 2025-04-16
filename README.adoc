@@ -1,0 +1,6 @@
+= TMLHonyaku-Wiki
+
+https://github.com/ExternalLocalizer/TMLHonyaku[TMLHonyaku]のWikiを管理するリポジトリです。
+
+wikiディレクトリを編集してPRを送ってください。
+権限をお持ちの方は、直接編集していただいても構いません。
