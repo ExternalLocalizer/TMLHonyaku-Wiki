@@ -40,7 +40,7 @@ A. [翻訳のやり方](翻訳のやり方)を参考にしてください。
 ### Q. Japanese Packを導入するだけで日本語化できるModを教えて！
 A. 対応Mod一覧は[こちら](https://github.com/ExternalLocalizer/TMLHonyaku/blob/main/TranslatedMods.csv)をご覧ください。
 
-### Q. アイテムの原文表示とかはどうやるの？
+### Q. アイテムの原文表示が煩わしいので消したい、変更はどうやるの？
 A. 設定→Modの設定→External localizer→ローカライズの設定→ローカライズの項目の「アイテム名の表示形式」を変更すればできます。3つあるのでお好きなものを選んでください。
 (このオプションをオンにしても適用されないModがいくつかあります)
 ちなみに、TrJpMod(日本語化パック)を使用している場合、この方法だとバニラアイテムが「銅の短剣(銅の短剣)」のようになってしまうため、バニラアイテムの原文も見たい人は[External localizer](https://steamcommunity.com/sharedfiles/filedetails/?id=2986383249)、[External localizer JapanesePack](https://steamcommunity.com/sharedfiles/filedetails/?id=3401890281)、[TrJpMod[EN] (日本語化パック)](https://steamcommunity.com/sharedfiles/filedetails/?id=2865024243)をサブスクライブして使用してください。
@@ -58,7 +58,7 @@ A. 翻訳ファイルに漏れがある可能性があります。
 A. External localizerの設定をデフォルトにリセットしてみてください。
 
 ### Q. 一部のバニラアイテムとか、NPCのセリフが日本語化されないんだけど？
-A. 仕様上訳せない箇所がいくつかあります。
+A. 仕様上訳せない箇所があります。
 
 ---
 
