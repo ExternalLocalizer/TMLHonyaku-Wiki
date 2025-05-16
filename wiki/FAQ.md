@@ -25,7 +25,7 @@ A. 配置場所が間違っている、またはファイル名が誤ってい�
 また、Terrariaのインストール先がOneDriveになっていたり、Steamクラウドがオンの場合、うまく反映されない時があります。
 
 ### Q. アスタリスクになるんだけど
-A. [TrJpMod](https://steamcommunity.com/sharedfiles/filedetails/?id=3401926459)など、フォントが同梱されているリソースパックなどを導入してください。
+A. [TrJpMod](https://steamcommunity.com/sharedfiles/filedetails/?id=2864004486)など、フォントが同梱されているリソースパックなどを導入してください。
 
 ### Q. いちいちファイル入れるのめんどいんだけど？
 A. External localizerとExternal localizer JapanesePackを導入することで手間を省けます。
@@ -95,15 +95,12 @@ A. 現在、Calamity Modなど大規模Modが最新版に対応していない�
 
 📁 Calamity Modのワークショップファイルの場所：Steam/steamapps/workshop/content/1281930/2824688072
 
-
-💬 解決しない場合は…
-
 それでも問題が解消しない場合は、コメント欄またはDiscordにてお問い合わせください。
 （※なお、tModLoaderのエラーメッセージはかなり曖昧な場合があります）
 
 ### Q. 文字がウィンドウからはみ出たり、重なって押せなかったりするんだけど
 A. 日本語フォントの幅やレイアウトの都合で表示が崩れる場合があります。
-翻訳ファイルは基本的に[TrJpMod](https://steamcommunity.com/sharedfiles/filedetails/?id=3401926459)のフォントを基準として作られています。
+翻訳ファイルは基本的に[TrJpMod](https://steamcommunity.com/sharedfiles/filedetails/?id=2864004486)のフォントを基準として作られています。
 
 ### Q. ゲーム内ワークショップから検索しても出てこないんだけど
 A. [Steamワークショップ](https://steamcommunity.com/sharedfiles/filedetails/?id=2986383249)からダウンロードすることを推奨します。
