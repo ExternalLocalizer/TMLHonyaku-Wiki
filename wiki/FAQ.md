@@ -25,7 +25,7 @@ A. 配置場所が間違っている、またはファイル名が誤ってい�
 また、Terrariaのインストール先がOneDriveになっていたり、Steamクラウドがオンの場合、うまく反映されない時があります。
 
 ### Q. アスタリスクになるんだけど
-A. [TrJpMod](https://steamcommunity.com/sharedfiles/filedetails/?id=2864004486)など、フォントが同梱されているリソースパックなどを導入してください。
+A. [TrJpMod](https://steamcommunity.com/sharedfiles/filedetails/?id=2865024243)など、フォントが同梱されているリソースパックなどを導入してください。
 
 ### Q. いちいちファイル入れるのめんどいんだけど？
 A. External localizerとExternal localizer JapanesePackを導入することで手間を省けます。
@@ -42,9 +42,11 @@ A. 対応Mod一覧は[こちら](https://github.com/ExternalLocalizer/TMLHonyaku
 
 ### Q. アイテムの原文表示が煩わしいので消したい、変更はどうやるの？
 A. 設定→Modの設定→External localizer→ローカライズの設定→ローカライズの項目の「アイテム名の表示形式」を変更すればできます。3つあるのでお好きなものを選んでください。
-(このオプションをオンにしても適用されないModがいくつかあります)
-ちなみに、TrJpMod(日本語化パック)を使用している場合、この方法だとバニラアイテムが「銅の短剣(銅の短剣)」のようになってしまうため、バニラアイテムの原文も見たい人は[External localizer](https://steamcommunity.com/sharedfiles/filedetails/?id=2986383249)、[External localizer JapanesePack](https://steamcommunity.com/sharedfiles/filedetails/?id=3401890281)、[TrJpMod[EN] (日本語化パック)](https://steamcommunity.com/sharedfiles/filedetails/?id=2865024243)をサブスクライブして使用してください。
-原文だけ見たい方はフィルターのプリセットから原文表示したいものを個別でオンにしてください。
+(このオプションをオンにしても適用されないModがいくつかあります)  
+原文だけ表示させたい方はフィルターのプリセットから原文表示したいものを個別でオンにしてください。
+
+### Q. バニラアイテムの原文が日本語で表示されるんだけど
+バニラアイテムの原文も見たい人はTrJpModを無効化し、[TrJpMod[EN] (日本語化パック)](https://steamcommunity.com/sharedfiles/filedetails/?id=2865024243)をサブスクライブして使用してください。
 
 ### Q. 誤訳見つけたよ！or ここ翻訳おかしくない？
 A. 公式Discordで報告してください。改善にご協力いただけると助かります。
@@ -122,4 +124,4 @@ A. モバイル版では基本的に日本語化Modは使用できません。
 A. Windowsが主に対象ですが、Mac(Intel)/Linux(Arch)でも動作する場合があります。
 
 ### Q. サブスクライブって何？
-A. SteamでModを購読（インストール）する機能のことです。
+A. SteamでModを購読（インストール）する機能のことです（無料）。
