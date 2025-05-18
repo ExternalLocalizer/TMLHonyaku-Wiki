@@ -4,9 +4,28 @@ TMLHonyakuへようこそ。
 
 ## 翻訳を使用する
 
-翻訳の導入にあたり、よくある質問を纏めています
+**1. External Localizerの導入**
 
-- [FAQ](FAQ)
+Steamワークショップから「[External localizer](https://steamcommunity.com/sharedfiles/filedetails/?id=2986383249)」をダウンロードし、有効化します。  
+このModには日本語フォントが含まれていないため、文字化けが発生する可能性があります。  
+日本語対応フォントを含むModやリソースパック（例: [Kanamoji Fonts](https://steamcommunity.com/sharedfiles/filedetails/?id=2461784420)、[TrJpMod](https://steamcommunity.com/sharedfiles/filedetails/?id=2865024243)）を予め導入してください。
+
+**2. 翻訳ファイルの準備（以下のいずれか）**  
+**方法A: 翻訳ファイルを自分で用意して配置**  
+翻訳されたhjsonファイルを用意します。
+GitHubのTMLHonyakuリポジトリなどから取得してください。  
+用意したhjsonファイルを、以下のフォルダに配置します：  
+C:\Users\<ユーザー名>\Documents\My Games\Terraria\tModLoader\ExternalLocalizer\Localization
+
+**方法B: External Localizer Japanese Packを導入**  
+Steamワークショップにある「External Localizer Japanese Pack」には、TMLHonyakuの翻訳ファイルがあらかじめ同梱されており、手動でファイルを配置する手間が不要になります。  
+External Localizerと併用することで、日本語化が適用されます。  
+
+**3. (翻訳が反映されない場合)External Localizerの設定**  
+Mod一覧で「External Localizer」の「Click to open config」をクリックして設定を開きます。  
+以下のように設定します：  
+Enable Localizer: On  
+Language Key: ja-JP  
 
 ## 翻訳に参加する
 
@@ -28,6 +47,9 @@ TMLHonyakuにアップロードする場合、なるべくこの用語集に倣�
   - [アイテム（その他）](用語集-アイテム（その他）)
   - [連携Mod](用語集-連携Mod)
 
+## よくある質問
+
+- [FAQ](FAQ)
 ___
 
 このwikiは[TMLHonyaku-Wiki][github:TMLHonyaku-Wiki]から編集できます。
