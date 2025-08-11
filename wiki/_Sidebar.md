@@ -10,7 +10,7 @@ ___
 
 **翻訳を使用する**
 
-- TODO
+- [翻訳を使用する](https://github.com/ExternalLocalizer/TMLHonyaku/wiki#翻訳を使用する)
 
 ___
 
