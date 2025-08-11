@@ -23,7 +23,7 @@ Steamワークショップにある「External Localizer Japanese Pack」には�
 External Localizerと併用することで、日本語化が適用されます。  
 
 **3. 有効化する**  
-tModLoaderのメインメニューで「Workshop」→「Resource Packs」を開き、TrJpの欄にある▷を押し、有効化してください。その後「Workshop」→「Manage Mods」からExternal LocalizerとExternal Localizer Japanese Packの2つを有効化(Enable)してください。
+tModLoaderのメインメニューで「Workshop」→「Use Resource Packs」を開き、TrJpの欄にある▷を押し、有効化してください。その後「Workshop」→「Manage Mods」からExternal LocalizerとExternal Localizer Japanese Packの2つを有効化(Enable)してください。
 
 **4. (翻訳が反映されない場合)External Localizerの設定を変更する**  
 Mod一覧で「External Localizer」の「Click to open config」をクリックして設定を開きます。  
