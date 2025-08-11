@@ -9,6 +9,7 @@ TMLHonyakuへようこそ。
 Steamワークショップから「[External localizer](https://steamcommunity.com/sharedfiles/filedetails/?id=2986383249)」をダウンロードし、有効化します。  
 このModには日本語フォントが含まれていないため、文字化けが発生する可能性があります。  
 日本語対応フォントを含むModやリソースパック（例: [Kanamoji Fonts](https://steamcommunity.com/sharedfiles/filedetails/?id=2461784420)、[TrJpMod](https://steamcommunity.com/sharedfiles/filedetails/?id=2865024243)）を予め導入してください。
+今回はTrJpを使用します。
 
 **2. 翻訳ファイルの準備（以下のいずれか）**  
 **方法A: 翻訳ファイルを自分で用意して配置**  
@@ -21,7 +22,10 @@ C:\Users\<ユーザー名>\Documents\My Games\Terraria\tModLoader\ExternalLocali
 Steamワークショップにある「External Localizer Japanese Pack」には、TMLHonyakuの翻訳ファイルがあらかじめ同梱されており、手動でファイルを配置する手間が不要になります。  
 External Localizerと併用することで、日本語化が適用されます。  
 
-**3. (翻訳が反映されない場合)External Localizerの設定**  
+**3. 有効化する**  
+tModLoaderのメインメニューで「Workshop」→「Resource Packs」を開き、TrJpの欄にある▷を押し、有効化してください。その後「Workshop」→「Manage Mods」からExternal LocalizerとExternal Localizerの2つを有効化(Enable)してください。
+
+**4. (翻訳が反映されない場合)External Localizerの設定を変更する**  
 Mod一覧で「External Localizer」の「Click to open config」をクリックして設定を開きます。  
 以下のように設定します：  
 Enable Localizer: On  
