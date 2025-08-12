@@ -87,7 +87,7 @@ A. 万が一に備えてバックアップを取ってからModを導入する�
 A. 現在、External Localizerが最新版に対応していないということは、**基本的にありません**。  
 
 Modの入れすぎによる競合や、過去にExternal Localizerを導入した際の古い日本語化ファイルが残っていて、不具合を引き起こしている場合などがあります。
-前者の場合はModを整理し、後者の場合は以下の手順でフォルダ内の .hjson ファイルをすべて削除してください。  
+前者の場合はModを整理し、後者の場合は下記のフォルダ内の .hjson ファイルをすべて削除してください。  
 
 **該当フォルダ：**  
 ドキュメント/My Games/Terraria/tModLoader/ExternalLocalizer/localization  
