@@ -72,3 +72,22 @@
 | Ogre            | オーガ           |
 | Dark Mage       | ダークメイジ     |
 | Betsy           | ベッツィ         |
+
+### タウンNPC ムード
+
+| 英文                        | 和文                             |
+| --------------------------- | ------------------------------- |
+| I am content.               | 私は満足しています。              |
+| I hate not having a home.   | 家を持っていないのが 嫌なんです。  |
+| I am too far from home.     | 家から遠すぎる。                  |
+| I dislike how crowded I am. | 人混みが嫌いです。                |
+| I hate how crowded I am.    | こんなに混んでいるのは 嫌だよ。    |
+| I love having so much space.| 充分なスペースが あるのがいいね。  |
+| I like {BiomeName}.         | 私は {BiomeName} が 好きだ。     |
+| I love {BiomeName}.         | 私は {BiomeName} を 愛している。 |
+| I dislike {BiomeName}.      | 私は {BiomeName} が 嫌いだ。     |
+| I hate {BiomeName}.         | 私は {BiomeName} が 大嫌いだ。   |
+| I like {NPCName}.           | 私は {NPCName} が 好きだ。       |
+| I love {NPCName}.           | 私は {NPCName} を 愛しているよ。 |
+| I dislike {NPCName}.        | 私は {NPCName} が 嫌いだ。       |
+| I hate {NPCName}.           | 私は {NPCName} が 大嫌いだ。     |
